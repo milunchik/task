@@ -1,0 +1,20 @@
+export type ProductType = {
+  id: number;
+  name: string;
+  brand: string;
+  model: string;
+  reference: string;
+  price: number;
+  description: string;
+  caseMaterial: string;
+  caseDiameter: number;
+  caseThickness: number;
+  bezel: string;
+  crystal: string;
+  dialColor: string;
+  movement: string;
+  powerReserve: string;
+  waterResistance: string;
+  bracelet: string;
+  functions: string[];
+};
