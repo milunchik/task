@@ -222,26 +222,65 @@ export const ResultSection = styled.div`
   margin-top: 30px;
 `;
 
-export const BikeCount = styled.h4``;
+export const Result = styled.h4``;
+
+export const FilterText = styled.p`
+  color: ${({ theme }) => theme.colors.text_color};
+  font-size: ${({ theme }) => theme.font_size.base};
+  font-weight: ${({ theme }) => theme.font_weight.regular};
+`;
 
 export const ButtonGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
+  color: ${({ theme }) => theme.colors.text_color};
+  font-size: ${({ theme }) => theme.font_size.base};
+  font-weight: ${({ theme }) => theme.font_weight.regular};
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
   gap: 10px;
   margin: 10px 0;
+  background-color: ${({ theme }) => theme.colors.product_bg};
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+`;
+
+export const FiltersGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
 `;
 
 export const Button = styled.button<ButtonProps>`
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: ${({ active }) => (active ? '#000' : '#f0f0f0')};
-  color: ${({ active }) => (active ? '#fff' : '#000')};
+  padding: 10px 17px;
+  border-radius: 100px;
+  border: none;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  background: ${({ active }) => (active ? '#989898' : '#FFFFFF')};
+  color: ${({ active }) => (active ? '#FFFFFF' : '#989898')};
   cursor: pointer;
 
   &:hover {
     opacity: 0.9;
   }
+`;
+
+export const PaginationBtn = styled.button<ButtonProps>`
+  border: 1px solid ${({ theme }) => theme.colors.pagination};
+  background: ${({ active }) => (active ? '#E5E7EB' : '#FFFFFF')};
+  border-radius: 6px;
+  text-align: center;
+  padding: 6px 12px;
+`;
+
+export const PaginationContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 `;
 
 export const Pagination = styled.div`
@@ -253,9 +292,22 @@ export const Pagination = styled.div`
 
 export const ResultsPerPage = styled.div`
   margin-top: 10px;
+  color: ${({ theme }) => theme.colors.filter_btn};
+  font-size: ${({ theme }) => theme.font_size.sm};
+  font-weight: ${({ theme }) => theme.font_weight.regular};
+  line-height: ${({ theme }) => theme.line_height.base};
+`;
 
-  select {
-    margin-left: 10px;
-    padding: 4px;
-  }
+export const ItemNumber = styled.input.attrs({ type: 'number' })`
+  margin-left: 10px;
+  width: 100%;
+  max-width: 45px;
+  text-align: center;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.colors.pagination_hover};
+  color: ${({ theme }) => theme.colors.primary};
+  font-size: 16px;
+  outline: none;
 `;

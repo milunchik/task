@@ -89,34 +89,39 @@ export const Filters: React.FC = () => {
       </S.Section>
 
       <S.ResultSection>
-        <S.BikeCount>found</S.BikeCount>
+        <S.Result>found</S.Result>
 
         <S.ButtonGroup>
-          <S.Button>Lowest price</S.Button>
-          <S.Button>Closest</S.Button>
-          <S.Button>Newest Listings</S.Button>
-          <S.Button>Specification</S.Button>
-          <S.Button active>Retailer</S.Button>
+          <S.FilterText>Order by</S.FilterText>
+
+          <S.FiltersGroup>
+            <S.Button>Lowest price</S.Button>
+            <S.Button>Closest</S.Button>
+            <S.Button>Newest Listings</S.Button>
+            <S.Button>Specification</S.Button>
+            <S.Button active>Retailer</S.Button>
+          </S.FiltersGroup>
         </S.ButtonGroup>
 
-        <S.Pagination>
-          <S.Button>First</S.Button>
-          <S.Button>Prev</S.Button>
-          {[...Array(10)].map((_, i) => (
-            <S.Button key={i}>{i + 1}</S.Button>
-          ))}
-          <S.Button>Next</S.Button>
-          <S.Button>Last</S.Button>
-        </S.Pagination>
+        <S.PaginationContainer>
+          <S.Pagination>
+            <S.PaginationBtn>First</S.PaginationBtn>
+            <S.PaginationBtn>Prev</S.PaginationBtn>
+            {[...Array(10)].map((_, i) => (
+              <S.PaginationBtn key={i}>{i + 1}</S.PaginationBtn>
+            ))}
+          </S.Pagination>
 
-        <S.ResultsPerPage>
-          Results per page
-          <select>
-            <option>3</option>
-            <option>5</option>
-            <option>10</option>
-          </select>
-        </S.ResultsPerPage>
+          <S.Pagination>
+            <S.PaginationBtn>Next</S.PaginationBtn>
+            <S.PaginationBtn>Last</S.PaginationBtn>
+          </S.Pagination>
+
+          <S.ResultsPerPage>
+            Results per page
+            <S.ItemNumber type="number" name="number" id="number" placeholder="5"></S.ItemNumber>
+          </S.ResultsPerPage>
+        </S.PaginationContainer>
       </S.ResultSection>
     </S.Container>
   );
