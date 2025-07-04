@@ -7,6 +7,7 @@ export const theme = {
     text_color: '#6B7280',
     pagination_bg: '#E5E7EB',
     filter_btn: '#656565',
+    histogram_color: '#D9D9D9',
   },
   fonts: {
     main: "'Inter', sans-serif",
