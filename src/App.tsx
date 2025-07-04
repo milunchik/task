@@ -1,10 +1,11 @@
 import './App.css';
+import { products } from './assets/data';
 import { Filters } from './components/Filters/Filters';
 
 function App() {
   return (
     <>
-      <Filters />
+      <Filters products={products} />
     </>
   );
 }

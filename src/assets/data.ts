@@ -7,7 +7,7 @@ export const products: ProductType[] = [
     brand: 'Omega',
     model: 'Speedmaster Racing',
     reference: '326.30.40.50.01.002',
-    price: 3370.0,
+    price: 3370,
     description: `The Omega Speedmaster Racing 326.30.40.50.01.002 is a 40 mm stainless steel chronograph watch featuring a black dial with silver sub‑dials, sapphire crystal, and tachymeter bezel. Powered by Omega automatic Calibre 3330 with Co‑Axial escapement and 52‑hour power reserve. Water‑resistant to 100 m/330 ft.`,
     caseMaterial: 'Stainless Steel',
     caseDiameter: 40,
@@ -20,6 +20,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-01T10:00:00Z',
+    retailer: 'TimeZone Watches',
   },
 
   {
@@ -41,6 +43,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-02T12:15:00Z',
+    retailer: 'WatchPlanet',
   },
 
   {
@@ -62,6 +66,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-03T14:30:00Z',
+    retailer: 'Omega Outlet',
   },
 
   {
@@ -83,6 +89,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-04T09:45:00Z',
+    retailer: 'Luxury Timepieces',
   },
 
   {
@@ -104,6 +112,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-05T08:20:00Z',
+    retailer: 'ChronoMarket',
   },
 
   {
@@ -125,6 +135,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-06T13:10:00Z',
+    retailer: 'ChronoMarket',
   },
 
   {
@@ -146,11 +158,14 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-07T11:55:00Z',
+    retailer: 'WatchHub',
   },
 
   {
     id: 8,
     name: 'Omega Speedmaster Racing 326.30.40.50.01.002',
+    retailer: 'Swiss Time Co',
     brand: 'Omega',
     model: 'Speedmaster Racing',
     reference: '326.30.40.50.01.002',
@@ -167,6 +182,7 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-08T15:40:00Z',
   },
 
   {
@@ -188,6 +204,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-09T10:05:00Z',
+    retailer: 'Elite Watches',
   },
 
   {
@@ -209,6 +227,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-10T16:25:00Z',
+    retailer: 'Watch Vault',
   },
 
   {
@@ -230,6 +250,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-11T13:50:00Z',
+    retailer: 'TickTock Traders',
   },
 
   {
@@ -251,6 +273,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-12T14:45:00Z',
+    retailer: 'LuxuryTime',
   },
 
   {
@@ -272,6 +296,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-13T17:30:00Z',
+    retailer: 'WristWorthy',
   },
 
   {
@@ -293,6 +319,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-14T08:15:00Z',
+    retailer: 'Timeless Boutique',
   },
 
   {
@@ -314,6 +342,8 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-15T09:35:00Z',
+    retailer: 'Omega Direct',
   },
 
   {
@@ -335,5 +365,7 @@ export const products: ProductType[] = [
     waterResistance: '100 m / 330 ft',
     bracelet: 'Stainless steel bracelet, ~19 mm lug',
     functions: ['Chronograph', 'Date', 'Tachymeter'],
+    createdAt: '2024-11-16T12:00:00Z',
+    retailer: 'Global Watch Store',
   },
 ];

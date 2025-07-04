@@ -20,7 +20,6 @@ export const Container = styled.div<DarkModeProps>`
   background-color: ${({ darkMode }) => (darkMode ? '#989898' : '#fff')};
   color: ${({ darkMode }) => (darkMode ? '#fff' : '#000')};
   padding: 20px;
-  border-radius: 12px;
 `;
 
 export const StickContainer = styled.div`
@@ -264,7 +263,7 @@ export const Button = styled.button<ButtonProps>`
   cursor: pointer;
 
   &:hover {
-    opacity: 0.9;
+    background-color: ${({ theme }) => theme.colors.second};
   }
 `;
 
@@ -274,6 +273,10 @@ export const PaginationBtn = styled.button<ButtonProps>`
   border-radius: 6px;
   text-align: center;
   padding: 6px 12px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.pagination_hover};
+  }
 `;
 
 export const PaginationContainer = styled.div`

@@ -17,4 +17,6 @@ export type ProductType = {
   waterResistance: string;
   bracelet: string;
   functions: string[];
+  createdAt: string;
+  retailer: string;
 };

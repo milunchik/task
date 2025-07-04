@@ -7,9 +7,15 @@ export const ProductContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   border: none;
-  border-radius: 16px;
-  padding: 16px 8px;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 20px;
+  margin-top: 35px;
   cursor: pointer;
+`;
+
+export const ProductWrapper = styled.div`
+  margin-bottom: 10px;
 `;
 
 export const InfoBlock = styled.div`
