@@ -244,6 +244,11 @@ export const ButtonGroup = styled.div`
   border: none;
   border-radius: 8px;
   padding: 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 export const FiltersGroup = styled.div`
@@ -251,6 +256,11 @@ export const FiltersGroup = styled.div`
   flex-direction: row;
   justify-content: space-between;
   gap: 24px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 16px;
+  }
 `;
 
 export const Button = styled.button<ButtonProps>`
@@ -264,6 +274,12 @@ export const Button = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.second};
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
   }
 `;
 
