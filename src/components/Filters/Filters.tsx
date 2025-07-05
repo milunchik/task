@@ -153,7 +153,7 @@ export const Filters: React.FC<FiltersType> = ({ products }) => {
       </S.Section>
 
       <S.ResultSection>
-        <S.Result>found</S.Result>
+        <S.Result>{paginatedProducts.length} products found</S.Result>
 
         <S.ButtonGroup>
           <S.FilterText>Order by</S.FilterText>
@@ -218,7 +218,7 @@ export const Filters: React.FC<FiltersType> = ({ products }) => {
             ></S.ItemNumber>
           </S.ResultsPerPage>
         </S.PaginationContainer>
-          <ProductItem products={paginatedProducts} />
+        <ProductItem products={paginatedProducts} />
       </S.ResultSection>
     </S.Container>
   );

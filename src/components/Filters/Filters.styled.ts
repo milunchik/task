@@ -274,6 +274,7 @@ export const Button = styled.button<ButtonProps>`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.second};
+    color: ${({ theme }) => theme.colors.light};
   }
 
   @media (max-width: 768px) {
